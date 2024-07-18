@@ -1,0 +1,13 @@
+name: tests
+on:
+  workflow_dispatch:
+jobs:
+  syntax:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332 # v4.1.7
+      - name: Install fish shell
+        uses: fish-shop/install-fish-shell@b16edb7b39f2b56846ac5d3d13fd195b03cb3a4e # v1.0.4
+      - name: Syntax check fish files
+        uses: fish-shop/syntax-check@workflow-commands

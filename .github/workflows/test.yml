@@ -5,7 +5,7 @@ on:
       - main
   workflow_dispatch:
 jobs:
-  syntax:
+  syntax-check:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository

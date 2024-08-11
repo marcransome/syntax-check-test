@@ -15,4 +15,4 @@ jobs:
       - name: Syntax check fish files
         uses: fish-shop/syntax-check@v1
         with:
-          pattern: '$GITHUB_WORKSPACE'
+          pattern: '**.fish'

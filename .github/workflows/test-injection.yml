@@ -13,6 +13,6 @@ jobs:
       - name: Install fish shell
         uses: fish-shop/install-fish-shell@b16edb7b39f2b56846ac5d3d13fd195b03cb3a4e # v1.0.4
       - name: Syntax check fish files
-        uses: fish-shop/syntax-check@test-fix
+        uses: fish-shop/syntax-check@v1
         with:
-          pattern: '{one,two}/**.fish three/*.???? four/*'
+          pattern: '**.fish; end; echo "injected"; for file in **.fish'

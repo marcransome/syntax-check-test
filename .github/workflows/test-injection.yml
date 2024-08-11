@@ -15,4 +15,4 @@ jobs:
       - name: Syntax check fish files
         uses: fish-shop/syntax-check@v1
         with:
-          pattern: '**.fish; end; echo "injected"; for file in **.fish'
+          pattern: '**.fish; end; echo "injected"; for file in **.fish $GITHUB_WORKSPACE'
